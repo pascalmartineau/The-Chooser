@@ -11,8 +11,6 @@
     :root {
       --red: #c62828;
       --green: #2e7d32;
-      --cream: #fff3e0;
-      --cheese: #f7c948;
       --crust: #d28b36;
       --pepperoni: #b71c1c;
       --olive: #2f3e2f;
@@ -166,11 +164,12 @@
       position: absolute;
       left: 0;
       top: 0;
-      transform: translate(-50%, -205px) rotate(90deg);
-      width: 100px;
+      transform: translate(-50%, -170px) rotate(90deg);
+      width: 92px;
       text-align: center;
       font-weight: 700;
-      font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+      font-size: clamp(0.82rem, 2.3vw, 1.05rem);
+      line-height: 1;
       color: #5d4037;
       text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
     }
@@ -244,6 +243,23 @@
       margin-top: 18px;
       font-size: 0.95rem;
       color: #6d4c41;
+    }
+    @media (max-width: 600px) {
+      .label span {
+        transform: translate(-50%, -145px) rotate(90deg);
+        width: 84px;
+        font-size: 0.8rem;
+      }
+      .center {
+        width: 72px;
+        height: 72px;
+        font-size: 0.7rem;
+      }
+      .pointer {
+        border-left-width: 18px;
+        border-right-width: 18px;
+        border-top-width: 36px;
+      }
     }
   </style>
 </head>
