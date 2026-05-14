@@ -33,6 +33,7 @@
       align-items: center;
       justify-content: center;
       padding: 24px;
+      overflow-x: hidden;
     }
     .app {
       width: 100%;
@@ -151,27 +152,27 @@
       letter-spacing: 1px;
       font-size: 0.8rem;
     }
-.label {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 120px;
-  text-align: center;
-  transform-origin: 0 0;
-  font-weight: 700;
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  color: #5d4037;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
-  z-index: 2;
-  pointer-events: none;
-}
-.label span {
-  display: block;
-  transform: translate(-50%, -185px) rotate(90deg);
-}
+    .label {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      height: 0;
+      transform-origin: 0 0;
+      z-index: 2;
+      pointer-events: none;
+    }
     .label span {
-      display: block;
-      transform: translateY(-150px);
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-50%, -205px) rotate(90deg);
+      width: 100px;
+      text-align: center;
+      font-weight: 700;
+      font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+      color: #5d4037;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
     }
     .pep {
       position: absolute;
@@ -254,12 +255,12 @@
     <div class="wheel-wrap">
       <div class="pointer"></div>
       <div class="wheel" id="wheel">
-        <div class="label" style="transform: translate(-50%, -50%) rotate(30deg);"><span>Sophia</span></div>
-        <div class="label" style="transform: translate(-50%, -50%) rotate(90deg);"><span>Courtney</span></div>
-        <div class="label" style="transform: translate(-50%, -50%) rotate(150deg);"><span>Sophia</span></div>
-        <div class="label" style="transform: translate(-50%, -50%) rotate(210deg);"><span>Courtney</span></div>
-        <div class="label" style="transform: translate(-50%, -50%) rotate(270deg);"><span>Sophia</span></div>
-        <div class="label" style="transform: translate(-50%, -50%) rotate(330deg);"><span>Courtney</span></div>
+        <div class="label" style="transform: rotate(30deg);"><span>Sophia</span></div>
+        <div class="label" style="transform: rotate(90deg);"><span>Courtney</span></div>
+        <div class="label" style="transform: rotate(150deg);"><span>Sophia</span></div>
+        <div class="label" style="transform: rotate(210deg);"><span>Courtney</span></div>
+        <div class="label" style="transform: rotate(270deg);"><span>Sophia</span></div>
+        <div class="label" style="transform: rotate(330deg);"><span>Courtney</span></div>
         <div class="pep" style="top: 70px; left: 160px;"></div>
         <div class="pep" style="top: 110px; left: 270px;"></div>
         <div class="pep" style="top: 210px; left: 300px;"></div>
