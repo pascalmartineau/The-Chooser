@@ -151,20 +151,24 @@
       letter-spacing: 1px;
       font-size: 0.8rem;
     }
-    .label {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 140px;
-      margin-left: -70px;
-      transform-origin: center center;
-      font-weight: 700;
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: #5d4037;
-      text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
-      z-index: 2;
-      pointer-events: none;
-    }
+.label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  text-align: center;
+  transform-origin: 0 0;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: #5d4037;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
+  z-index: 2;
+  pointer-events: none;
+}
+.label span {
+  display: block;
+  transform: translate(-50%, -185px) rotate(90deg);
+}
     .label span {
       display: block;
       transform: translateY(-150px);
